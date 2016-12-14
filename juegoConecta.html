@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="estilos.css" rel="stylesheet">
+
+<title>Juego Conecta 4</title>
+</head>
+
+<body>
+	
+	<div>
+
+		<header>
+			<h1>JUEGO. CONECTA 4</h1>
+		</header>
+
+		<div id="datos">
+			<p>
+				Introduce la dimensión del tablero de juego (4-10):
+				<input type="text" id="dimension" name="dimension">
+				<input type="button" value="Genera Tablero" onclick="generaTablero()"/>
+			</p>
+			<p>
+				Selecciona el jugador que comienza el juego:
+				<select name="tur" id="tur">
+					<option value="X">X</option>
+					<option value="O">O</option>
+				</select>
+			</p>
+		</div>
+
+		<div id="juego">
+			
+			<div id="matriz">
+
+			</div>
+
+			<br/><br/>
+			<input type="button" value="Volver a empezar" onclick="volverEmpezar()"/>
+		</div>
+	</div>
+</body>
+
+	<script src="juegoConecta2.js"></script>
+</html>
